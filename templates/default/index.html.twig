@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Oisif Agressif /!\{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <h1>Oisif Agressif</h1>
+
+    <div class="container">
+        <a href="{{ path('oisif1')}}"> <img src="{{ asset('/img/oisif-1.png') }}" class="img-logo" alt="oisif agressif" width="280px"></a>
+        <a href="{{ path('oisif2')}}"> <img src="{{ asset('/img/oisif-2.png') }}" class="img-logo" alt="oisif agressif" width="280px"></a>
+        <a href="{{ path('oisif3')}}"> <img src="{{ asset('/img/oisif-3.png') }}" class="img-logo" alt="oisif agressif" width="280px"></a>
+    </div>
+
+</div>
+{% endblock %}

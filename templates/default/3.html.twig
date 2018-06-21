@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Oisif Agressif #3{% endblock %}
+
+
+{% block body %}
+
+    <div class="container">
+        <h1>Oisif Agressif n°3</h1>
+        <div class="card" style="width: 18rem;">
+
+            <a href="{{ path('compil3')}}">
+            <img class="card-img-top" src="{{ asset('/img/Oisif-agressif-K7.jpg') }}" alt="Compil train">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">K7 du train</h5>
+                <a href="{{ path('compil3')}}">
+                <p class="card-text">Ecouter la compil spéciale train. Merci Radix !</p>
+                </a>
+            </div>
+        </div>
+
+        <p><a href="{{ path('home')}}">Revenir à la liste de tous les superbes numéros</a></p>
+    </div>
+    <div
+{% endblock %}
