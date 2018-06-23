@@ -6,7 +6,15 @@
 
     <div class="container">
         <h1>K7 #3</h1>
-        <audio id="audioPlayer" src="{{ asset('/music/k73.wav') }}"></audio>
+
+        <div>
+                <li><a href="{{ path('download-compiltrain') }}">Télécharger la compil</a></li>
+                <li><a href="{{ path('home')}}">Revenir à la liste de tous les superbes numéros</a></li>
+        </div>
+        <div>
+                <img class="card-img-top" src="{{ asset('/img/Oisif-agressif-K7.jpg') }}" alt="Compil train">
+
+        </div>
     </div>
 
 {% endblock %}
