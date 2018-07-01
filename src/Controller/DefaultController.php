@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Form\ContactType;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\ResponseHeaderBag;
@@ -49,7 +50,7 @@ class DefaultController extends Controller
 
     /**
      *
-      @Route("/3/compil-train", name="compil3")
+     * @Route("/3/compil-train", name="compil3")
      */
     public function compil()
     {
@@ -74,10 +75,9 @@ class DefaultController extends Controller
         $path = $this->get('kernel')->getRootDir() . '/../public/music/compil-train.wav';
 
         $response = new BinaryFileResponse($path);
-        $response->setContentDisposition(ResponseHeaderBag::DISPOSITION_ATTACHMENT,'compil-train.wav');
+        $response->setContentDisposition(ResponseHeaderBag::DISPOSITION_ATTACHMENT, 'compil-train.wav');
 
         return $response;
     }
-
 
 }

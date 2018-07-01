@@ -5,8 +5,14 @@
 {% block body %}
 
     <div class="container">
-        <h1>Oisif Agressif n°1</h1>
-        <ul>
+        <div class="row">
+            <div class="col-1">
+                <a href="{{ path('home')}}"> <img src="{{ asset('/img/oisif.png') }}" alt="oisif agressif"></a>
+            </div>
+            <div class="col-sm">
+                <h1>Oisif Agressif n°1</h1>
+            </div>
+        </div>        <ul>
             <li><b>Dessins :</b> Delphine, des éditions de la dernière chance
             <a href="https://www.instagram.com/dernierechanceeditions/" target = "_blank">instagram.com/dernierechanceeditions/</a></li>
 
@@ -16,8 +22,6 @@
             <li><b>Mise en page :</b> Boz, <a href="http://octokunst.tumblr.com/" target = "_blank">octokunst.tumblr.com/</a></li>
         </ul>
 
-        <p><span class="glyphicon glyphicon-chevron-left"></span><a href="{{ path('home')}}">Revenir à la liste de tous les superbes numéros</a></p>
-        <p></p>
         <iframe style="width:100%; height:800px;" src="//e.issuu.com/embed.html#32831657/58758964" frameborder="0" allowfullscreen></iframe>
     </div>
 

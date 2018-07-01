@@ -5,14 +5,18 @@
 {% block body %}
 
     <div class="container">
-        <h1>K7 #3</h1>
-
-        <div>
-                <li><a href="{{ path('download-compiltrain') }}">Télécharger la compil</a></li>
-                <li><a href="{{ path('home')}}">Revenir à la liste de tous les superbes numéros</a></li>
-            <p></p>
+        <div class="row">
+            <div class="col-1">
+                <a href="{{ path('home')}}"> <img src="{{ asset('/img/oisif.png') }}" alt="oisif agressif"></a>
+            </div>
+            <div class="col-sm">
+                <h1>K7 Compil #3</h1>
+            </div>
         </div>
         <div>
+                <a href="{{ path('download-compiltrain') }}"><i class="fas fa-download"></i> Télécharger la compil</a>
+            <p></p>
+
                 <img class="card-img-top" src="{{ asset('/img/Oisif-agressif-K7.jpg') }}" alt="Compil train">
 
         </div>

@@ -5,13 +5,21 @@
 {% block body %}
 
 <div class="container">
-    <h1>Oisif Agressif</h1>
-
+    <div class="row">
+        <div class="col-1">
+            <a href="{{ path('home')}}"> <img src="{{ asset('/img/oisif.png') }}" alt="oisif agressif"></a>
+        </div>
+        <div class="col-sm">
+            <h1>Oisif Agressif</h1>
+        </div>
+    </div>
     <div class="container">
         <a href="{{ path('oisif1')}}"> <img src="{{ asset('/img/oisif-1.png') }}" class="img-logo" alt="oisif agressif" width="280px"></a>
         <a href="{{ path('oisif2')}}"> <img src="{{ asset('/img/oisif-2.png') }}" class="img-logo" alt="oisif agressif" width="280px"></a>
         <a href="{{ path('oisif3')}}"> <img src="{{ asset('/img/oisif-3.png') }}" class="img-logo" alt="oisif agressif" width="280px"></a>
     </div>
+    {% block retourNav %}
+    {% endblock %}
 
 </div>
 {% endblock %}
