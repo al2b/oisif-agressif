@@ -80,18 +80,4 @@ class DefaultController extends Controller
         return $response;
     }
 
-    /**
-     * @Route("/contact", name="contact")
-     */
-    public function contact()
-    {
-        $contactForm = $this->createForm(ContactType::class);
-
-        return $this->render('default/contact.html.twig', [
-            'form' => $contactForm->createView(),
-        ]);
-
-    }
-
-
 }
