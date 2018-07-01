@@ -11,24 +11,35 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+    <div class="container">
+
+    {% block body %}{% endblock %}
         {% block javascripts %}
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         {% endblock %}
+
+    {% block retourNav %}
+        <p></p>
+
+        <p><a href="{{ path('home')}}"><i class="fas fa-arrow-left"></i> Revenir à la liste de tous les superbes numéros</a></p>
+        <p></p>
+    {% endblock %}
+    </div>
     </body>
         <footer class="footer">
+
+
+
             {% block footer %}
 
             <div class="container">
-                <p><a href="{{ path('home')}}"><i class="fas fa-arrow-left"></i> Revenir à la liste de tous les superbes numéros</a></p>
-                <p></p>
-                <span class="text-muted"><a href="https://www.instagram.com/oisifagressif/?hl=fr">Suivez-nous sur <i class="fab fa-instagram"></i> et gagnez des points de Karma !</a></span>
-                <span>- et/ou -</span>
-                <span class="text-muted"><a href="{{ path('contact')}}">Envoyez-nous des mots doux</a></span>
+
+                <span class="text-muted"><a href="https://www.instagram.com/oisifagressif/?hl=fr">Suis-nous sur <i class="fab fa-instagram"></i> et gagne des points de Karma !</a></span>
             </div>
             {% endblock %}
 
         </footer>
+
 </html>
