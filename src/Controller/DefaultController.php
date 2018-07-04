@@ -59,6 +59,16 @@ class DefaultController extends Controller
     }
 
     /**
+     *
+     * @Route("/3/soluces", name="soluces")
+     */
+    public function soluces()
+    {
+        return $this->render('default/soluce.html.twig', [
+        ]);
+    }
+
+    /**
      * @param Request $request
      * @return BinaryFileResponse
      * @Route("compil-train/download", name="download-compiltrain")
